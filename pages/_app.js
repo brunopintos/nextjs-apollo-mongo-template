@@ -1,3 +1,4 @@
+import "../utils/styles.css";
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { primary, secondary } from '../utils/colors';
 import Head from 'next/head';

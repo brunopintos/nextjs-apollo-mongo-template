@@ -10,6 +10,7 @@ import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 import ColumnDiv from "../ColumnDiv";
 import Link from "next/link";
 import MenuIcon from "@material-ui/icons/Menu";
+import { secondary } from "../../utils/colors";
 import styled from "styled-components";
 import { useState } from "react";
 
@@ -90,7 +91,7 @@ const ColumnStartDiv = styled(ColumnDiv)`
 
 const StyledIconButton = styled(IconButton)`
   && {
-    background-color: #e91e63;
+    background-color: ${secondary};
     border-radius: 5px;
   }
 `;

@@ -9,50 +9,6 @@ const USER = gql`
       picture
       phone
       email
-      isBusiness
-      deliveries {
-        id
-        title
-        images
-        status
-        reservationTime
-        pickedUpBy {
-          id
-          name
-          surname
-        }
-      }
-      pickUps {
-        id
-        title
-        images
-        status
-        publishedBy {
-          id
-          name
-          surname
-        }
-      }
-      changeRequests {
-        id
-        text
-        status
-        product {
-          id
-          title
-          images
-        }
-        sender {
-          id
-          name
-          surname
-        }
-        receiver {
-          id
-          name
-          surname
-        }
-      }
     }
   }
 `;

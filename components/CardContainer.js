@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const CardContainer = styled.div`
-  width: calc((100% / 2) - 6vw);
+  width: 434px;
   height: auto;
   margin: 1vw;
   display: flex;
@@ -11,10 +11,8 @@ const CardContainer = styled.div`
   border-radius: 16px;
   box-shadow: 2px 2px 6px 4px rgba(0, 0, 0, 0.05);
   overflow: hidden;
-  @media (min-width: 1280px) {
-    width: 535.6px;
-  }
-  @media (max-width: 768px) {
+  padding-top: 20px;
+  @media (max-width: 434px) {
     width: calc((100%));
   }
 `;

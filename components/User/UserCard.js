@@ -1,3 +1,4 @@
+import { secondary, tertiary } from "../../utils/colors";
 import CardContainer from "../CardContainer";
 import RowDiv from "../RowDiv";
 import { Typography } from "@material-ui/core";
@@ -39,23 +40,11 @@ const PrimaryContainer = styled.div`
 `;
 
 const ProfilePicture = styled.img`
-  max-height: 12vw;
-  max-width: 12vw;
+  height: 153.5px;
+  width: 153.5px;
   border-radius: 50%;
   object-fit: cover;
   padding: 16px;
-  @media (min-width: 1280px) {
-    height: 153.5px;
-    width: 153.5px;
-  }
-  @media (max-width: 768px) {
-    max-height: 20vw;
-    max-width: 20vw;
-  }
-  @media (max-width: 480px) {
-    max-height: 25vw;
-    max-width: 25vw;
-  }
 `;
 
 const NameContainer = styled(RowDiv)`
@@ -65,16 +54,7 @@ const NameContainer = styled(RowDiv)`
 const NameText = styled(Typography)`
   && {
     margin-left: 0.2em;
-    font-size: 1.7vw;
-    @media (min-width: 1280px) {
-      font-size: 21px;
-    }
-    @media (max-width: 768px) {
-      font-size: 2.5vw;
-    }
-    @media (max-width: 480px) {
-      font-size: 3.4vw;
-    }
+    font-size: 21px;
   }
 `;
 
@@ -114,27 +94,18 @@ const Row = styled(RowDiv)`
 
 const HeaderRow = styled(Row)`
   color: white;
-  background-color: #e91e63;
+  background-color: ${secondary};
 `;
 
 const BodyRow = styled(Row)`
   &:hover {
-    background-color: #f8bbd0;
+    background-color: ${tertiary};
   }
 `;
 
 const InformationText = styled(Typography)`
   && {
-    font-size: 1.3vw;
-    @media (min-width: 1280px) {
-      font-size: 16px;
-    }
-    @media (max-width: 768px) {
-      font-size: 2vw;
-    }
-    @media (max-width: 480px) {
-      font-size: 3vw;
-    }
+    font-size: 16px;
   }
 `;
 
