@@ -16,7 +16,7 @@ const apolloServer = new ApolloServer({
   },
   formatError: (err) =>
     err
-    && err?.extensions
+    && err.extensions
     && err.extensions.exception
     && err.extensions.exception.name
     && err.extensions.exception.name.includes("MongoError")
